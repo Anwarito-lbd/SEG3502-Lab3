@@ -1,0 +1,16 @@
+.items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.empty-list-notice {
+  text-align: center;
+  padding: 24px;
+  font-size: 16px;
+  color: #6b7280;
+  background-color: #f9fafb;
+  border: 1px dashed #d1d5db;
+  border-radius: 8px;
+}

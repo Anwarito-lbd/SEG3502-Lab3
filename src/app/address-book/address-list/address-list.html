@@ -1,0 +1,30 @@
+<div class="address-list-container">
+  <div class="toolbar mb-3">
+    <button class="btn btn-success" (click)="addAddress()">+ New Address</button>
+  </div>
+  <hr class="separator" />
+  <div class="content-row">
+    <div class="address-sidebar">
+      @for (address of addresses; track $index) {
+        <app-address-list-element
+          [address]="address"
+          (click)="select(address)">
+        </app-address-list-element>
+      } @empty {
+        <p class="text-muted">Aucune adresse enregistrée.</p>
+      }
+    </div>
+    <div class="address-details-pane">
+      @if (currentAddress !== null) {
+        <app-address-view
+          [address]="currentAddress"
+          (fireDelete)="deleteCurrent()">
+        </app-address-view>
+      } @else {
+        <div class="no-selection">
+          Sélectionnez une adresse ou cliquez sur "New Address".
+        </div>
+      }
+    </div>
+  </div>
+</div>

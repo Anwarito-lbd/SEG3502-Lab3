@@ -1,0 +1,19 @@
+<div class="input-group-row">
+  <input
+    type="text"
+    id="item-input"
+    name="itemText"
+    class="shopping-text-input"
+    placeholder="brocolli"
+    [(ngModel)]="itemText"
+    (keyup.enter)="onSubmit()"
+    autocomplete="off"
+  />
+  <button
+    type="button"
+    id="add-button"
+    class="btn-action btn-ajouter"
+    (click)="onSubmit()">
+    Ajouter
+  </button>
+</div>

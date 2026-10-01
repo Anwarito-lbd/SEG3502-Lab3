@@ -1,0 +1,63 @@
+.address-list-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.toolbar {
+  margin-bottom: 16px;
+}
+
+.separator {
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+  margin: 16px 0;
+}
+
+.content-row {
+  display: flex;
+  gap: 24px;
+}
+
+.address-sidebar {
+  flex: 0 0 260px;
+}
+
+.address-details-pane {
+  flex: 1;
+}
+
+.btn-success {
+  background-color: #198754;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-success:hover {
+  background-color: #157347;
+}
+
+.no-selection {
+  padding: 40px;
+  text-align: center;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  color: #64748b;
+}
+
+@media (max-width: 768px) {
+  .content-row {
+    flex-direction: column;
+  }
+  .address-sidebar {
+    flex: none;
+    width: 100%;
+  }
+}

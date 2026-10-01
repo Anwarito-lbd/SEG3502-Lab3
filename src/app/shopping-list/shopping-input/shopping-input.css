@@ -1,0 +1,51 @@
+.input-group-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.shopping-text-input {
+  flex: 1;
+  padding: 12px 18px;
+  font-size: 20px;
+  color: #1f2937;
+  background-color: #ffffff;
+  border: 1.5px solid #9ca3af;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.shopping-text-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.25);
+}
+
+.shopping-text-input::placeholder {
+  color: #6b7280;
+  opacity: 0.9;
+}
+
+.btn-action {
+  padding: 10px 24px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+  background-color: #e5e7eb;
+  border: 1.5px solid #9ca3af;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.15s, transform 0.1s, box-shadow 0.15s;
+}
+
+.btn-action:hover {
+  background-color: #d1d5db;
+  border-color: #6b7280;
+}
+
+.btn-action:active {
+  transform: translateY(1px);
+}

@@ -1,0 +1,13 @@
+<div class="items-container">
+  @for (item of items; track $index) {
+    <app-shopping-item
+      [item]="item"
+      [index]="$index"
+      (delete)="onDelete($event)">
+    </app-shopping-item>
+  } @empty {
+    <div class="empty-list-notice">
+      La liste de courses est vide. Ajoutez un élément ci-dessus !
+    </div>
+  }
+</div>

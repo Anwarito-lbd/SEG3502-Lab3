@@ -1,0 +1,45 @@
+<div class="app-container">
+  <!-- Lab Navigation Bar -->
+  <header class="app-nav-header">
+    <div class="brand-title">
+      <h1>SEG 3502 &mdash; Laboratoire 3</h1>
+      <span class="subtitle">Angular &mdash; Composants</span>
+    </div>
+
+    <nav class="nav-tabs-bar">
+      <button
+        type="button"
+        class="tab-btn"
+        [class.active]="activeTab === 'shopping'"
+        (click)="setTab('shopping')">
+        🛒 Exercice : Liste de courses (Livrable)
+      </button>
+      <button
+        type="button"
+        class="tab-btn"
+        [class.active]="activeTab === 'address'"
+        (click)="setTab('address')">
+        📇 Tutoriel : Carnet d'adresses (Address Book)
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="main-content">
+    @if (activeTab === 'shopping') {
+      <div class="exercise-section">
+        <div class="exercise-info-banner">
+          <strong>Exercice évalué :</strong> Application de liste de courses (Shopping List) avec deux composants Angular au moins, communication par Input / Output et état réactif.
+        </div>
+        <app-shopping-list></app-shopping-list>
+      </div>
+    } @else {
+      <div class="tutorial-section">
+        <app-header></app-header>
+        <div class="container">
+          <app-address-list></app-address-list>
+        </div>
+      </div>
+    }
+  </main>
+</div>

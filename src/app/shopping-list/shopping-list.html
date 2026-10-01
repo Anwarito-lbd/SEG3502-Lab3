@@ -1,0 +1,22 @@
+<div class="shopping-page-wrapper">
+  <div class="shopping-card-frame">
+    <!-- Top section: Saisie & Bouton Ajouter -->
+    <div class="input-section-box">
+      <app-shopping-input (itemAdded)="onAddItem($event)"></app-shopping-input>
+    </div>
+
+    <!-- Bottom section: Liste des éléments de la liste de courses -->
+    <div class="list-section-box">
+      <app-shopping-list-display
+        [items]="items"
+        (itemDeleted)="onDeleteItem($event)">
+      </app-shopping-list-display>
+    </div>
+  </div>
+
+  <div class="reset-toolbar">
+    <button type="button" class="btn-reset" (click)="resetList()">
+      Réinitialiser la liste (par défaut)
+    </button>
+  </div>
+</div>
