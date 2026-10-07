@@ -4,8 +4,8 @@
 ---
 
 ### Informations des étudiants
-- **Étudiant :** Anwar
-- **Étudiant :** Manasse
+- **Étudiant 1 :** Anwar (Numéro d'étudiant : 300254189)
+- **Étudiant 2 :** Manasse (Numéro d'étudiant : 300268472)
 - **Cours :** SEG 3502
 - **Date :** Octobre 2026
 - **Projet :** `lab3-shopping-list`
@@ -115,20 +115,23 @@ Une suite complète de **31 tests unitaires** répartis sur **10 fichiers de sp�
 
 ---
 
-## 6. Guide d'Exécution
-
+## 6. Guide d'Installation et d'Exécution
+ 
 ```bash
 # 1. Se positionner dans le dossier du projet
 cd lab3-shopping-list
 
-# 2. Lancer le serveur de développement Angular
+# 2. Installer les dépendances du projet
+npm install
+
+# 3. Lancer le serveur de développement Angular
 npm start
 # L'application est alors accessible sur http://localhost:4200
 
-# 3. Lancer la suite complète de tests unitaires
+# 4. Lancer la suite complète de tests unitaires (31 tests)
 npm test
 
-# 4. Compiler l'application pour la production
+# 5. Compiler l'application pour la production
 npm run build
 ```
 
